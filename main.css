@@ -1,0 +1,341 @@
+:root {
+    --clr-primary: white;
+    --clr-light: black;
+    --clr-dark: black;
+    --clr-warning: rgb(99, 36, 36);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+  }
+  
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    color: #962222;
+    letter-spacing: 2px;
+    margin-top: 0;
+    box-shadow: #962222 0px 0px 8px 0px;
+  }
+  .stuff{
+      color: black;
+      border: solid #962222 5px;
+      border-radius: 10px;
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 5px;
+  }
+  .app-dimention{
+    width: 70%;
+    margin: 50px auto 0px auto;
+    
+}
+.two-sides{
+    display: flex;
+    width: 100%;
+}
+  .all-tasks {
+      background-color: lightgrey;
+      width: 40%;
+      height: 500px;
+      border: solid 5px #962222;
+      border-radius: 10px;
+      margin: 0;
+      margin-top: 5px;
+      margin-right: 5px;
+  }
+  .bottom-right{
+      background-color: lightgrey;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 60%;
+      height: 500px;
+      border: #962222 solid 5px;
+      border-radius: 10px;
+      margin-top: 5px;
+      margin-left: 5px;
+  }
+  .task-list-title{
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 5px 0px;
+    width: auto;
+    height: 10%;
+    border-radius: 10px;
+  }
+  .task-list {
+    background-color: white;
+    margin: 5px;
+    padding: 5px 0px;
+    width: auto;
+    height: 65%;
+    border-radius: 10px;
+    list-style-type: none;
+    overflow: scroll;
+  }
+  .first-form{
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 5px 0px;
+    width: auto;
+    height: 10%;
+    border-radius: 10px;
+  }
+  
+  .list-name {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .list-name:hover {
+    opacity: 0.7;
+    background-color: lightgrey;
+    border-radius: 10px;
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  .btn {
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+  }
+  
+  .btn.create {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 5px;
+    padding-left: 10px;
+    transition: opacity 250ms ease-in;
+  }
+  
+  .btn.create:hover {
+    opacity: 0.7;
+  }
+  
+  .btn.delete {
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 10px 0px;
+    width: 100%;
+    height: 10%;
+    border-radius: 10px;
+  }
+  
+  .btn.delete:hover {
+    color: var(--clr-warning);
+  }
+  
+  .new {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    font-size: inherit;
+    outline: none;
+    padding: 0.25em;
+    order: 2;
+  }
+  
+  .new::-webkit-input-placeholder {
+    opacity: 0.4;
+  }
+  
+  .new:-ms-input-placeholder {
+    opacity: 0.4;
+  }
+  
+  .new::-ms-input-placeholder {
+    opacity: 0.4;
+  }
+  
+  .new::placeholder {
+    opacity: 0.4;
+  }
+  
+  .new:focus {
+    border-bottom-width: 3px;
+  }
+  
+  .new:focus::-webkit-input-placeholder {
+    opacity: 0.15;
+  }
+  
+  .new:focus:-ms-input-placeholder {
+    opacity: 0.15;
+  }
+  
+  .new:focus::-ms-input-placeholder {
+    opacity: 0.15;
+  }
+  
+  .new:focus::placeholder {
+    opacity: 0.15;
+  }
+  
+  .new.list {
+    font-size: 1.1rem;
+    width: 100%;
+    margin-right: 10px;
+  }
+  
+  .new.task {
+      font-size: 1.1rem;
+      width: 100%;
+      margin-bottom: 0;
+      margin-right: 10px;
+  }
+  
+  .active-list {
+    font-weight: 700;
+    background-color: lightgrey;
+    border-radius: 10px;
+  }
+  
+  .todo-list {
+      background-color: lightgrey;
+      height: 100%;
+      border-radius: 10px;
+  }
+  
+  .todo-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 5px 0px;
+    width: auto;
+    height: 10%;
+    border-radius: 10px;
+  }
+  
+  .list-title {
+      padding: 5px 0px;
+      margin: 0
+  }
+  
+  .task-count {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .todo-body {
+    padding: var(--spacer);
+    position: relative;
+  }
+  
+  .new-task-creator .create {
+    color: black;
+  }
+  .tasks{
+    background-color: white;
+    margin: 5px;
+    padding: 5px 0px;
+    width: auto;
+    height: 65%;
+    border-radius: 10px;
+    list-style-type: none;
+    overflow: scroll;
+  }
+  
+  [type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .task label {
+    align-items: center;
+    position: relative;
+  }
+  
+  .task {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  
+  
+  .custom-checkbox {
+    --size: 0.75em;
+    display: inline-block;
+    width: var(--size);
+    height: var(--size);
+    margin-right: var(--size);
+    cursor: pointer;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition: -webkit-transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  }
+  
+  [type="checkbox"]:checked + label .custom-checkbox {
+    background: #962222;
+    border-color: #962222;
+  }
+  
+  label:hover{
+      font-weight: 400;
+  }
+  
+  .task label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    left: 1.5em;
+    top: 50%;
+    height: 3px;
+    background: currentColor;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transition: -webkit-transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  }
+  
+  [type="checkbox"]:checked + label::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  
+  .delete-stuff {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
